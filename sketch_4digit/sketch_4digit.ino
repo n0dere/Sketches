@@ -90,7 +90,7 @@ void setup()
 
 void loop()
 {
-    // uint16_t == uint16_t == 2 bytes
+    // uint16_t == 2 bytes
 
     if (Serial.available() > 0)
         Serial.readBytes((uint8_t*) &g_CachedValue, 2);
